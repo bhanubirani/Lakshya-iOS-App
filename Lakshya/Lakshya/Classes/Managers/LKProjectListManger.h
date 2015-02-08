@@ -10,4 +10,6 @@
 
 @interface LKProjectListManger : NSObject
 
++ (instancetype)sharedInstance;
+
 @end

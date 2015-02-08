@@ -8,6 +8,17 @@
 
 #import "LKProjectListManger.h"
 
+static LKProjectListManger *taskListManger;
+
 @implementation LKProjectListManger
+
++ (instancetype)sharedInstance {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        taskListManger = [[LKProjectListManger alloc] init];
+    });
+    
+    return taskListManger;
+}
 
 @end
