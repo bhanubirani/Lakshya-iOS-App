@@ -48,14 +48,12 @@
 
 - (void)didRecieveOpenLeftPanelCallback {
     if (self.drawerController.openSide == MMDrawerSideLeft) {
-        
         [self.drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {
             
         }];
     } else {
-        
         [self.drawerController openDrawerSide:MMDrawerSideLeft animated:YES completion:^(BOOL finished) {
-            
+
         }];
     }
 }
