@@ -11,5 +11,6 @@
 @interface LKProjectListManger : NSObject
 
 + (instancetype)sharedInstance;
+- (void)downloadProjectWithStartIndex:(int)startindex numberofProjects:(int)numberofProjects;
 
 @end

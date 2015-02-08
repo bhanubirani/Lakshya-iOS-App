@@ -11,6 +11,7 @@
 #import "LKProjectListViewController.h"
 #import "LKUtils.h"
 #import "LKProjectListCVCell.h"
+#import "LKProjectListManger.h"
 
 @interface LKProjectListViewController ()
 
@@ -38,6 +39,8 @@
     [self.projectCollectionView registerClass:[LKProjectListCVCell class]
                    forCellWithReuseIdentifier:kLKProjectListCVCellReuseIdentifier];
     [self.projectCollectionView reloadData];
+    
+    [[LKProjectListManger sharedInstance] downloadProjectWithStartIndex:0 numberofProjects:5];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,8 +48,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)leftBarButtonAction:(id)sender
-{
+- (IBAction)leftBarButtonAction:(id)sender {
     [(APP_DELEGATE).rootVC didRecieveOpenLeftPanelCallback];
 }
 
