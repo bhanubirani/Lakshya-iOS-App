@@ -49,6 +49,7 @@
 }
 
 - (IBAction)leftBarButtonAction:(id)sender {
+    
     [(APP_DELEGATE).rootVC didRecieveOpenLeftPanelCallback];
 }
 

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface LKLeftMenuViewController : UIViewController
+{
+    NSArray *listOfMenu;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
