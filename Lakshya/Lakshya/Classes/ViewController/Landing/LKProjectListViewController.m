@@ -44,7 +44,7 @@
 
     [self.projectCollectionView reloadData];
     
-    [[LKProjectListManger sharedInstance] downloadProjectWithStartIndex:0 numberofProjects:5];
+    //[[LKProjectListManger sharedInstance] downloadProjectWithStartIndex:0 numberofProjects:5];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -36,6 +36,12 @@
 		2F747D391A874C59009BDB11 /* LKProjectListManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D381A874C59009BDB11 /* LKProjectListManger.m */; };
 		2F747D3C1A8754AB009BDB11 /* LKProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D3B1A8754AB009BDB11 /* LKProject.m */; };
 		2F747D401A877CD5009BDB11 /* LKProjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D3F1A877CD5009BDB11 /* LKProjectDetailViewController.m */; };
+		2F747D471A87872B009BDB11 /* LKHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D451A87872B009BDB11 /* LKHeaderTableViewCell.m */; };
+		2F747D481A87872B009BDB11 /* LKHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F747D461A87872B009BDB11 /* LKHeaderTableViewCell.xib */; };
+		2F747D4C1A878E42009BDB11 /* LKDataDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D4A1A878E42009BDB11 /* LKDataDetailTableViewCell.m */; };
+		2F747D4D1A878E42009BDB11 /* LKDataDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F747D4B1A878E42009BDB11 /* LKDataDetailTableViewCell.xib */; };
+		2F747D511A87917E009BDB11 /* LKTeamMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D4F1A87917E009BDB11 /* LKTeamMemberTableViewCell.m */; };
+		2F747D521A87917E009BDB11 /* LKTeamMemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F747D501A87917E009BDB11 /* LKTeamMemberTableViewCell.xib */; };
 		2FD7DB041A8727C70040A778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB031A8727C70040A778 /* main.m */; };
 		2FD7DB071A8727C70040A778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB061A8727C70040A778 /* AppDelegate.m */; };
 		2FD7DB0D1A8727C70040A778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7DB0B1A8727C70040A778 /* Main.storyboard */; };
@@ -119,6 +125,15 @@
 		2F747D3B1A8754AB009BDB11 /* LKProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProject.m; sourceTree = "<group>"; };
 		2F747D3E1A877CD5009BDB11 /* LKProjectDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectDetailViewController.h; sourceTree = "<group>"; };
 		2F747D3F1A877CD5009BDB11 /* LKProjectDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectDetailViewController.m; sourceTree = "<group>"; };
+		2F747D441A87872B009BDB11 /* LKHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKHeaderTableViewCell.h; sourceTree = "<group>"; };
+		2F747D451A87872B009BDB11 /* LKHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKHeaderTableViewCell.m; sourceTree = "<group>"; };
+		2F747D461A87872B009BDB11 /* LKHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		2F747D491A878E42009BDB11 /* LKDataDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDataDetailTableViewCell.h; sourceTree = "<group>"; };
+		2F747D4A1A878E42009BDB11 /* LKDataDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDataDetailTableViewCell.m; sourceTree = "<group>"; };
+		2F747D4B1A878E42009BDB11 /* LKDataDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKDataDetailTableViewCell.xib; sourceTree = "<group>"; };
+		2F747D4E1A87917E009BDB11 /* LKTeamMemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTeamMemberTableViewCell.h; sourceTree = "<group>"; };
+		2F747D4F1A87917E009BDB11 /* LKTeamMemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTeamMemberTableViewCell.m; sourceTree = "<group>"; };
+		2F747D501A87917E009BDB11 /* LKTeamMemberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKTeamMemberTableViewCell.xib; sourceTree = "<group>"; };
 		2FD7DAFE1A8727C70040A778 /* Lakshya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lakshya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD7DB021A8727C70040A778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD7DB031A8727C70040A778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -346,6 +361,15 @@
 			children = (
 				2F747D3E1A877CD5009BDB11 /* LKProjectDetailViewController.h */,
 				2F747D3F1A877CD5009BDB11 /* LKProjectDetailViewController.m */,
+				2F747D441A87872B009BDB11 /* LKHeaderTableViewCell.h */,
+				2F747D451A87872B009BDB11 /* LKHeaderTableViewCell.m */,
+				2F747D461A87872B009BDB11 /* LKHeaderTableViewCell.xib */,
+				2F747D491A878E42009BDB11 /* LKDataDetailTableViewCell.h */,
+				2F747D4A1A878E42009BDB11 /* LKDataDetailTableViewCell.m */,
+				2F747D4B1A878E42009BDB11 /* LKDataDetailTableViewCell.xib */,
+				2F747D4E1A87917E009BDB11 /* LKTeamMemberTableViewCell.h */,
+				2F747D4F1A87917E009BDB11 /* LKTeamMemberTableViewCell.m */,
+				2F747D501A87917E009BDB11 /* LKTeamMemberTableViewCell.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -487,8 +511,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F747D521A87917E009BDB11 /* LKTeamMemberTableViewCell.xib in Resources */,
 				2FD7DB0D1A8727C70040A778 /* Main.storyboard in Resources */,
 				2FD7DB121A8727C70040A778 /* LaunchScreen.xib in Resources */,
+				2F747D481A87872B009BDB11 /* LKHeaderTableViewCell.xib in Resources */,
+				2F747D4D1A878E42009BDB11 /* LKDataDetailTableViewCell.xib in Resources */,
 				2FD7DB0F1A8727C70040A778 /* Images.xcassets in Resources */,
 				9213B1B01A8777C000D34E2C /* LKProjectListCVCell.xib in Resources */,
 			);
@@ -527,9 +554,12 @@
 				2F747D131A87314B009BDB11 /* LKLoginViewController.m in Sources */,
 				2F747CFE1A87298F009BDB11 /* AFHTTPSessionManager.m in Sources */,
 				2F747D051A87298F009BDB11 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				2F747D511A87917E009BDB11 /* LKTeamMemberTableViewCell.m in Sources */,
 				2F747CFD1A87298F009BDB11 /* AFHTTPRequestOperationManager.m in Sources */,
 				2F747D091A87298F009BDB11 /* UIImageView+AFNetworking.m in Sources */,
+				2F747D471A87872B009BDB11 /* LKHeaderTableViewCell.m in Sources */,
 				9213B1AC1A87642800D34E2C /* LKProjectList.m in Sources */,
+				2F747D4C1A878E42009BDB11 /* LKDataDetailTableViewCell.m in Sources */,
 				2F747D201A873345009BDB11 /* LKProjectListViewController.m in Sources */,
 				2F747D3C1A8754AB009BDB11 /* LKProject.m in Sources */,
 				2F747D081A87298F009BDB11 /* UIButton+AFNetworking.m in Sources */,
