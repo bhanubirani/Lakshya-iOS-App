@@ -41,6 +41,7 @@
 		2FD7DB0F1A8727C70040A778 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7DB0E1A8727C70040A778 /* Images.xcassets */; };
 		2FD7DB121A8727C70040A778 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7DB101A8727C70040A778 /* LaunchScreen.xib */; };
 		2FD7DB1E1A8727C70040A778 /* LakshyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB1D1A8727C70040A778 /* LakshyaTests.m */; };
+		9213B1AC1A87642800D34E2C /* LKProjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213B1AB1A87642700D34E2C /* LKProjectList.m */; };
 		92FC011A1A873897000E82BB /* LKProjectListCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC01191A873897000E82BB /* LKProjectListCVCell.m */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,8 @@
 		2FD7DB171A8727C70040A778 /* LakshyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LakshyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD7DB1C1A8727C70040A778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD7DB1D1A8727C70040A778 /* LakshyaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LakshyaTests.m; sourceTree = "<group>"; };
+		9213B1AA1A87642700D34E2C /* LKProjectList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectList.h; sourceTree = "<group>"; };
+		9213B1AB1A87642700D34E2C /* LKProjectList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectList.m; sourceTree = "<group>"; };
 		92FC01181A873897000E82BB /* LKProjectListCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectListCVCell.h; sourceTree = "<group>"; };
 		92FC01191A873897000E82BB /* LKProjectListCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectListCVCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +244,8 @@
 			children = (
 				2F747D3A1A8754AB009BDB11 /* LKProject.h */,
 				2F747D3B1A8754AB009BDB11 /* LKProject.m */,
+				9213B1AA1A87642700D34E2C /* LKProjectList.h */,
+				9213B1AB1A87642700D34E2C /* LKProjectList.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 				2F747D051A87298F009BDB11 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2F747CFD1A87298F009BDB11 /* AFHTTPRequestOperationManager.m in Sources */,
 				2F747D091A87298F009BDB11 /* UIImageView+AFNetworking.m in Sources */,
+				9213B1AC1A87642800D34E2C /* LKProjectList.m in Sources */,
 				2F747D201A873345009BDB11 /* LKProjectListViewController.m in Sources */,
 				2F747D3C1A8754AB009BDB11 /* LKProject.m in Sources */,
 				2F747D081A87298F009BDB11 /* UIButton+AFNetworking.m in Sources */,
