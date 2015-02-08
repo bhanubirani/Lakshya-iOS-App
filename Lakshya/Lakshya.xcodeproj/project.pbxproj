@@ -42,6 +42,7 @@
 		2FD7DB121A8727C70040A778 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7DB101A8727C70040A778 /* LaunchScreen.xib */; };
 		2FD7DB1E1A8727C70040A778 /* LakshyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB1D1A8727C70040A778 /* LakshyaTests.m */; };
 		9213B1AC1A87642800D34E2C /* LKProjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213B1AB1A87642700D34E2C /* LKProjectList.m */; };
+		9213B1B01A8777C000D34E2C /* LKProjectListCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9213B1AF1A8777C000D34E2C /* LKProjectListCVCell.xib */; };
 		92FC011A1A873897000E82BB /* LKProjectListCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC01191A873897000E82BB /* LKProjectListCVCell.m */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,7 @@
 		2FD7DB1D1A8727C70040A778 /* LakshyaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LakshyaTests.m; sourceTree = "<group>"; };
 		9213B1AA1A87642700D34E2C /* LKProjectList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectList.h; sourceTree = "<group>"; };
 		9213B1AB1A87642700D34E2C /* LKProjectList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectList.m; sourceTree = "<group>"; };
+		9213B1AF1A8777C000D34E2C /* LKProjectListCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKProjectListCVCell.xib; sourceTree = "<group>"; };
 		92FC01181A873897000E82BB /* LKProjectListCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectListCVCell.h; sourceTree = "<group>"; };
 		92FC01191A873897000E82BB /* LKProjectListCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectListCVCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,6 +280,7 @@
 				2F747D1F1A873345009BDB11 /* LKProjectListViewController.m */,
 				92FC01181A873897000E82BB /* LKProjectListCVCell.h */,
 				92FC01191A873897000E82BB /* LKProjectListCVCell.m */,
+				9213B1AF1A8777C000D34E2C /* LKProjectListCVCell.xib */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				2FD7DB0D1A8727C70040A778 /* Main.storyboard in Resources */,
 				2FD7DB121A8727C70040A778 /* LaunchScreen.xib in Resources */,
 				2FD7DB0F1A8727C70040A778 /* Images.xcassets in Resources */,
+				9213B1B01A8777C000D34E2C /* LKProjectListCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,8 @@
 @interface LKProjectListCVCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *projectImageView;
+@property (weak, nonatomic) IBOutlet UIView *projectHeaderView;
 @property (weak, nonatomic) IBOutlet UILabel *projectNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *projectDescriptionLabel;
 
 @end

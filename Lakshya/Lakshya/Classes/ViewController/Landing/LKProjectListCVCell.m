@@ -14,4 +14,9 @@
 
 @implementation LKProjectListCVCell
 
+- (void)awakeFromNib{
+    [super awakeFromNib];
+    
+    self.projectHeaderView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+}
 @end

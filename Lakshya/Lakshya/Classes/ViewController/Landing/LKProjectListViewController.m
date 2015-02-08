@@ -38,6 +38,9 @@
     
     [self.projectCollectionView registerClass:[LKProjectListCVCell class]
                    forCellWithReuseIdentifier:kLKProjectListCVCellReuseIdentifier];
+    [self.projectCollectionView registerNib:[UINib nibWithNibName:@"LKProjectListCVCell" bundle:nil]
+                 forCellWithReuseIdentifier:kLKProjectListCVCellReuseIdentifier];
+
     [self.projectCollectionView reloadData];
     
     [[LKProjectListManger sharedInstance] downloadProjectWithStartIndex:0 numberofProjects:5];
@@ -80,13 +83,13 @@
     return projectListCVCell;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(UICollectionViewLayout *)collectionViewLayout
-  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    CGSize collectionViewCellSize = CGSizeMake(288, 240);
-    return collectionViewCellSize;
-}
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout *)collectionViewLayout
+//  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    CGSize collectionViewCellSize = CGSizeMake(288, 240);
+//    return collectionViewCellSize;
+//}
 
 #pragma mark - UICollectionViewDelegate Methods
 
