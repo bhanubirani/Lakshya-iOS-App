@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Mtw-3R-JdH" customClass="LKProjectStatsView">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEV-gA-pbX" userLabel="ProgressView">
+                    <rect key="frame" x="0.0" y="16" width="248" height="12"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p8-cV-zwH" userLabel="BackgroundProgressView">
+                            <rect key="frame" x="0.0" y="0.0" width="248" height="12"/>
+                            <color key="backgroundColor" red="0.7803921568627451" green="0.93725490196078431" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVC-f7-zKN" userLabel="ForegroundProgressView">
+                            <rect key="frame" x="0.0" y="0.0" width="248" height="12"/>
+                            <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DVC-f7-zKN" secondAttribute="bottom" id="0D3-ig-OPv"/>
+                        <constraint firstItem="DVC-f7-zKN" firstAttribute="leading" secondItem="DEV-gA-pbX" secondAttribute="leading" id="3JL-Gy-YAZ"/>
+                        <constraint firstAttribute="trailing" secondItem="DVC-f7-zKN" secondAttribute="trailing" id="Dab-P1-hhl"/>
+                        <constraint firstItem="9p8-cV-zwH" firstAttribute="leading" secondItem="DEV-gA-pbX" secondAttribute="leading" id="XS7-qr-2ZH"/>
+                        <constraint firstAttribute="bottom" secondItem="9p8-cV-zwH" secondAttribute="bottom" id="b0T-2E-bWo"/>
+                        <constraint firstAttribute="trailing" secondItem="9p8-cV-zwH" secondAttribute="trailing" id="cNE-sk-1WL"/>
+                        <constraint firstItem="DVC-f7-zKN" firstAttribute="top" secondItem="DEV-gA-pbX" secondAttribute="top" id="ifd-ua-CLJ"/>
+                        <constraint firstItem="9p8-cV-zwH" firstAttribute="top" secondItem="DEV-gA-pbX" secondAttribute="top" id="jZ4-AR-Lbg"/>
+                        <constraint firstAttribute="height" constant="12" id="s0J-lf-EgJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKo-rW-hPQ" userLabel="MiddleDetailView">
+                    <rect key="frame" x="0.0" y="38" width="248" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-tI-ug8" userLabel="FundedView">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EC6-5t-577" userLabel="FundedPercentageLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="72" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="G3Y-fU-kqn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" red="1" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funded" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jm-9Z-oTl" userLabel="FundedTextLabel">
+                                    <rect key="frame" x="0.0" y="22" width="72" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="EC6-5t-577" firstAttribute="leading" secondItem="BWt-tI-ug8" secondAttribute="leading" id="0sO-Nx-X6o"/>
+                                <constraint firstAttribute="width" constant="72" id="9pR-o4-EVM"/>
+                                <constraint firstItem="0jm-9Z-oTl" firstAttribute="leading" secondItem="BWt-tI-ug8" secondAttribute="leading" id="JMI-S6-0x8"/>
+                                <constraint firstItem="0jm-9Z-oTl" firstAttribute="top" secondItem="EC6-5t-577" secondAttribute="bottom" id="KKa-qd-oOc"/>
+                                <constraint firstAttribute="trailing" secondItem="EC6-5t-577" secondAttribute="trailing" id="MfZ-8A-GdD"/>
+                                <constraint firstItem="EC6-5t-577" firstAttribute="top" secondItem="BWt-tI-ug8" secondAttribute="top" id="SAi-pu-3Ni"/>
+                                <constraint firstAttribute="bottom" secondItem="0jm-9Z-oTl" secondAttribute="bottom" id="auU-TQ-5pm"/>
+                                <constraint firstAttribute="trailing" secondItem="0jm-9Z-oTl" secondAttribute="trailing" id="cf1-DC-0Ri"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCl-h1-eYa" userLabel="GoalView">
+                            <rect key="frame" x="88" y="0.0" width="72" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuF-uU-4gr" userLabel="GoalValueLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="72" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="Ly1-QR-iIa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" red="1" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-0U-Uo9" userLabel="GoalTextLabel">
+                                    <rect key="frame" x="0.0" y="22" width="72" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="dgf-0U-Uo9" secondAttribute="trailing" id="5ge-Av-xEK"/>
+                                <constraint firstAttribute="width" constant="72" id="V9a-Qo-H0I"/>
+                                <constraint firstAttribute="trailing" secondItem="yuF-uU-4gr" secondAttribute="trailing" id="WL1-Rl-2vD"/>
+                                <constraint firstItem="dgf-0U-Uo9" firstAttribute="leading" secondItem="QCl-h1-eYa" secondAttribute="leading" id="bKu-m7-ubf"/>
+                                <constraint firstAttribute="bottom" secondItem="dgf-0U-Uo9" secondAttribute="bottom" id="gC6-1a-cvd"/>
+                                <constraint firstItem="yuF-uU-4gr" firstAttribute="top" secondItem="QCl-h1-eYa" secondAttribute="top" id="jJC-vW-hps"/>
+                                <constraint firstItem="yuF-uU-4gr" firstAttribute="leading" secondItem="QCl-h1-eYa" secondAttribute="leading" id="y0m-BB-gDI"/>
+                                <constraint firstItem="dgf-0U-Uo9" firstAttribute="top" secondItem="yuF-uU-4gr" secondAttribute="bottom" id="zVa-EF-KNR"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67R-1Q-cLI" userLabel="DayslView">
+                            <rect key="frame" x="176" y="0.0" width="72" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0J-7D-vyU" userLabel="DaysLeftLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="72" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="wNy-5h-TsK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" red="1" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucf-ly-2z7" userLabel="DaysTextLabel">
+                                    <rect key="frame" x="0.0" y="22" width="72" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="k0J-7D-vyU" secondAttribute="trailing" id="02G-MK-xsg"/>
+                                <constraint firstItem="k0J-7D-vyU" firstAttribute="leading" secondItem="67R-1Q-cLI" secondAttribute="leading" id="CII-GL-nbZ"/>
+                                <constraint firstItem="ucf-ly-2z7" firstAttribute="leading" secondItem="67R-1Q-cLI" secondAttribute="leading" id="J6c-Jw-9PN"/>
+                                <constraint firstAttribute="width" constant="72" id="Mgj-a4-KbU"/>
+                                <constraint firstAttribute="bottom" secondItem="ucf-ly-2z7" secondAttribute="bottom" id="eJO-7T-hl0"/>
+                                <constraint firstItem="ucf-ly-2z7" firstAttribute="top" secondItem="k0J-7D-vyU" secondAttribute="bottom" id="gz5-dR-gmA"/>
+                                <constraint firstAttribute="trailing" secondItem="ucf-ly-2z7" secondAttribute="trailing" id="nDg-sc-2Ad"/>
+                                <constraint firstItem="k0J-7D-vyU" firstAttribute="top" secondItem="67R-1Q-cLI" secondAttribute="top" id="yHw-gT-Mez"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BWt-tI-ug8" secondAttribute="bottom" id="3le-JU-2ou"/>
+                        <constraint firstItem="QCl-h1-eYa" firstAttribute="top" secondItem="BWt-tI-ug8" secondAttribute="top" id="C7e-Om-koz"/>
+                        <constraint firstAttribute="trailing" secondItem="67R-1Q-cLI" secondAttribute="trailing" id="KF5-OI-7lp"/>
+                        <constraint firstItem="BWt-tI-ug8" firstAttribute="leading" secondItem="LKo-rW-hPQ" secondAttribute="leading" id="VfP-4D-i1P"/>
+                        <constraint firstItem="QCl-h1-eYa" firstAttribute="bottom" secondItem="BWt-tI-ug8" secondAttribute="bottom" id="fDX-uw-CBY"/>
+                        <constraint firstItem="QCl-h1-eYa" firstAttribute="centerX" secondItem="LKo-rW-hPQ" secondAttribute="centerX" id="kTU-Zv-NUz"/>
+                        <constraint firstAttribute="height" constant="44" id="q0M-Tt-4Av"/>
+                        <constraint firstItem="67R-1Q-cLI" firstAttribute="top" secondItem="QCl-h1-eYa" secondAttribute="top" id="tYx-Nv-2Kg"/>
+                        <constraint firstItem="BWt-tI-ug8" firstAttribute="top" secondItem="LKo-rW-hPQ" secondAttribute="top" id="uBH-Tn-iJa"/>
+                        <constraint firstItem="67R-1Q-cLI" firstAttribute="bottom" secondItem="QCl-h1-eYa" secondAttribute="bottom" id="z9Q-he-Jrd"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backers Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUu-D1-gfu" userLabel="BackersDetails">
+                    <rect key="frame" x="0.0" y="82" width="248" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LKo-rW-hPQ" secondAttribute="trailing" id="2xy-yq-nPF"/>
+                <constraint firstItem="DEV-gA-pbX" firstAttribute="top" secondItem="Mtw-3R-JdH" secondAttribute="top" constant="16" id="3s0-YS-O2Y"/>
+                <constraint firstItem="kUu-D1-gfu" firstAttribute="leading" secondItem="Mtw-3R-JdH" secondAttribute="leading" id="IVI-Of-EFa"/>
+                <constraint firstItem="LKo-rW-hPQ" firstAttribute="leading" secondItem="Mtw-3R-JdH" secondAttribute="leading" id="ZPF-vz-ig7"/>
+                <constraint firstAttribute="trailing" secondItem="kUu-D1-gfu" secondAttribute="trailing" id="Zka-T2-km2"/>
+                <constraint firstItem="DEV-gA-pbX" firstAttribute="leading" secondItem="Mtw-3R-JdH" secondAttribute="leading" id="b6e-WC-w1Z"/>
+                <constraint firstAttribute="trailing" secondItem="DEV-gA-pbX" secondAttribute="trailing" id="bvL-hm-pb9"/>
+                <constraint firstAttribute="centerY" secondItem="LKo-rW-hPQ" secondAttribute="centerY" id="fhv-Pr-OJy"/>
+                <constraint firstItem="kUu-D1-gfu" firstAttribute="top" secondItem="LKo-rW-hPQ" secondAttribute="bottom" id="hAr-2p-rHJ"/>
+                <constraint firstAttribute="bottom" secondItem="kUu-D1-gfu" secondAttribute="bottom" id="nab-9W-JFT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backersDetailsLabel" destination="kUu-D1-gfu" id="gF5-dk-ISP"/>
+                <outlet property="daysLeftLabel" destination="k0J-7D-vyU" id="bzQ-fz-8Aw"/>
+                <outlet property="foregroundProgressView" destination="DVC-f7-zKN" id="4bL-oe-RDz"/>
+                <outlet property="fundedPercentageLabel" destination="EC6-5t-577" id="92k-uG-Yo1"/>
+                <outlet property="goalValueLabel" destination="yuF-uU-4gr" id="nh5-xm-4cF"/>
+            </connections>
+            <point key="canvasLocation" x="233" y="256"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

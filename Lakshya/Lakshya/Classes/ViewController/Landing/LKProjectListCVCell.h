@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LKProjectStatsView.h"
 
 @interface LKProjectListCVCell : UICollectionViewCell
 
@@ -14,5 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIView *projectHeaderView;
 @property (weak, nonatomic) IBOutlet UILabel *projectNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *projectDescriptionLabel;
+
+@property (strong, nonatomic) LKProjectStatsView *lkProjectStatsView;
 
 @end
