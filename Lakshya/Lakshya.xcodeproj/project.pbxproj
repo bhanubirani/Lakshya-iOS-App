@@ -34,6 +34,7 @@
 		2F747D321A8738AE009BDB11 /* LKLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D311A8738AE009BDB11 /* LKLeftMenuViewController.m */; };
 		2F747D361A873957009BDB11 /* LKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D351A873957009BDB11 /* LKUtils.m */; };
 		2F747D391A874C59009BDB11 /* LKProjectListManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D381A874C59009BDB11 /* LKProjectListManger.m */; };
+		2F747D3C1A8754AB009BDB11 /* LKProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D3B1A8754AB009BDB11 /* LKProject.m */; };
 		2FD7DB041A8727C70040A778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB031A8727C70040A778 /* main.m */; };
 		2FD7DB071A8727C70040A778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB061A8727C70040A778 /* AppDelegate.m */; };
 		2FD7DB0D1A8727C70040A778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7DB0B1A8727C70040A778 /* Main.storyboard */; };
@@ -111,6 +112,8 @@
 		2F747D351A873957009BDB11 /* LKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUtils.m; sourceTree = "<group>"; };
 		2F747D371A874C59009BDB11 /* LKProjectListManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectListManger.h; sourceTree = "<group>"; };
 		2F747D381A874C59009BDB11 /* LKProjectListManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectListManger.m; sourceTree = "<group>"; };
+		2F747D3A1A8754AB009BDB11 /* LKProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProject.h; sourceTree = "<group>"; };
+		2F747D3B1A8754AB009BDB11 /* LKProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProject.m; sourceTree = "<group>"; };
 		2FD7DAFE1A8727C70040A778 /* Lakshya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lakshya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD7DB021A8727C70040A778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD7DB031A8727C70040A778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 		2F747CFA1A87298F009BDB11 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2F747D3A1A8754AB009BDB11 /* LKProject.h */,
+				2F747D3B1A8754AB009BDB11 /* LKProject.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -502,6 +507,7 @@
 				2F747CFD1A87298F009BDB11 /* AFHTTPRequestOperationManager.m in Sources */,
 				2F747D091A87298F009BDB11 /* UIImageView+AFNetworking.m in Sources */,
 				2F747D201A873345009BDB11 /* LKProjectListViewController.m in Sources */,
+				2F747D3C1A8754AB009BDB11 /* LKProject.m in Sources */,
 				2F747D081A87298F009BDB11 /* UIButton+AFNetworking.m in Sources */,
 				2F747D0B1A87298F009BDB11 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2F747D391A874C59009BDB11 /* LKProjectListManger.m in Sources */,
