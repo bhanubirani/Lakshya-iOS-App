@@ -15,10 +15,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pcn-DK-e1z">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="220"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="180" id="i4B-c6-ODf"/>
+                            <constraint firstAttribute="height" constant="220" id="i4B-c6-ODf"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFt-1o-70U" userLabel="ProjectHeaderView">
@@ -51,19 +51,19 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Description" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dg-ZM-oF6" userLabel="ProjectDescriptionLabel">
-                        <rect key="frame" x="0.0" y="180" width="288" height="36"/>
+                        <rect key="frame" x="0.0" y="220" width="288" height="48"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="36" id="thF-uG-a4H"/>
+                            <constraint firstAttribute="height" constant="48" id="thF-uG-a4H"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ty-jO-iUB" userLabel="EndLineView">
-                        <rect key="frame" x="0.0" y="398" width="288" height="2"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="frame" x="0.0" y="399" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="2" id="7Rb-7w-jxA"/>
+                            <constraint firstAttribute="height" constant="1" id="7Rb-7w-jxA"/>
                         </constraints>
                     </view>
                 </subviews>

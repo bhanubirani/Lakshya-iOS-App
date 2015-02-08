@@ -7,6 +7,7 @@
 //
 
 #import "LKProjectListCVCell.h"
+#import "LKProjectStatsView.h"
 
 @interface LKProjectListCVCell()
 
@@ -18,5 +19,15 @@
     [super awakeFromNib];
     
     self.projectHeaderView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+    
+    NSArray *subviewArray =
+    [[NSBundle mainBundle] loadNibNamed:@"LKProjectStatsView" owner:self options:nil];
+    self.lkProjectStatsView = [subviewArray objectAtIndex:0];
+    CGRect lkProjectStatsViewFrame = self.lkProjectStatsView.frame;
+    lkProjectStatsViewFrame.origin.x = (self.frame.size.width - lkProjectStatsViewFrame.size.width)/2;
+    lkProjectStatsViewFrame.origin.y = CGRectGetMaxY(self.projectDescriptionLabel.frame);
+    self.lkProjectStatsView.frame = lkProjectStatsViewFrame;
+    [self addSubview:self.lkProjectStatsView];
 }
+
 @end
