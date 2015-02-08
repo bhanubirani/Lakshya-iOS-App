@@ -25,7 +25,7 @@
     self.fundedPercentageLabel.text =
     [NSString stringWithFormat:@"%ld%@",(long)progressPercentage,kLRPercentageUnicode];
     self.goalValueLabel.text =
-    [NSString stringWithFormat:@"%ld%@",(long)progressPercentage,kLRRupeesUnicode];
+    [NSString stringWithFormat:@"%@%ld",kLRRupeesUnicode,(long)goalValue];
     self.daysLeftLabel.text =
     [NSString stringWithFormat:@"%ld Days",(long)daysLeft];
     self.backersDetailsLabel.text =
