@@ -24,6 +24,9 @@
 		2F747D0A1A87298F009BDB11 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747CF41A87298F009BDB11 /* UIProgressView+AFNetworking.m */; };
 		2F747D0B1A87298F009BDB11 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747CF61A87298F009BDB11 /* UIRefreshControl+AFNetworking.m */; };
 		2F747D0C1A87298F009BDB11 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747CF81A87298F009BDB11 /* UIWebView+AFNetworking.m */; };
+		2F747D131A87314B009BDB11 /* LKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D121A87314B009BDB11 /* LKLoginViewController.m */; };
+		2F747D1D1A87331A009BDB11 /* LKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D1C1A87331A009BDB11 /* LKRootViewController.m */; };
+		2F747D201A873345009BDB11 /* LKProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D1F1A873345009BDB11 /* LKProjectListViewController.m */; };
 		2FD7DB041A8727C70040A778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB031A8727C70040A778 /* main.m */; };
 		2FD7DB071A8727C70040A778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB061A8727C70040A778 /* AppDelegate.m */; };
 		2FD7DB0D1A8727C70040A778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7DB0B1A8727C70040A778 /* Main.storyboard */; };
@@ -79,6 +82,12 @@
 		2F747CF61A87298F009BDB11 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		2F747CF71A87298F009BDB11 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		2F747CF81A87298F009BDB11 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		2F747D111A87314B009BDB11 /* LKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLoginViewController.h; sourceTree = "<group>"; };
+		2F747D121A87314B009BDB11 /* LKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLoginViewController.m; sourceTree = "<group>"; };
+		2F747D1B1A87331A009BDB11 /* LKRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKRootViewController.h; sourceTree = "<group>"; };
+		2F747D1C1A87331A009BDB11 /* LKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKRootViewController.m; sourceTree = "<group>"; };
+		2F747D1E1A873345009BDB11 /* LKProjectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectListViewController.h; sourceTree = "<group>"; };
+		2F747D1F1A873345009BDB11 /* LKProjectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectListViewController.m; sourceTree = "<group>"; };
 		2FD7DAFE1A8727C70040A778 /* Lakshya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lakshya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD7DB021A8727C70040A778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD7DB031A8727C70040A778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -206,6 +215,9 @@
 		2F747CFB1A87298F009BDB11 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2F747D141A8731B9009BDB11 /* Root */,
+				2F747D0F1A87312C009BDB11 /* Landing */,
+				2F747D101A87312C009BDB11 /* Login */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -217,6 +229,33 @@
 				2FD7DB061A8727C70040A778 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2F747D0F1A87312C009BDB11 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				2F747D1E1A873345009BDB11 /* LKProjectListViewController.h */,
+				2F747D1F1A873345009BDB11 /* LKProjectListViewController.m */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		2F747D101A87312C009BDB11 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F747D111A87314B009BDB11 /* LKLoginViewController.h */,
+				2F747D121A87314B009BDB11 /* LKLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F747D141A8731B9009BDB11 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2F747D1B1A87331A009BDB11 /* LKRootViewController.h */,
+				2F747D1C1A87331A009BDB11 /* LKRootViewController.m */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		2FD7DAF51A8727C70040A778 = {
@@ -381,14 +420,17 @@
 				2F747D071A87298F009BDB11 /* UIAlertView+AFNetworking.m in Sources */,
 				2F747D001A87298F009BDB11 /* AFSecurityPolicy.m in Sources */,
 				2F747CFC1A87298F009BDB11 /* AFHTTPRequestOperation.m in Sources */,
+				2F747D1D1A87331A009BDB11 /* LKRootViewController.m in Sources */,
 				2F747D041A87298F009BDB11 /* AFURLSessionManager.m in Sources */,
 				2F747D031A87298F009BDB11 /* AFURLResponseSerialization.m in Sources */,
 				2FD7DB071A8727C70040A778 /* AppDelegate.m in Sources */,
 				2F747D0A1A87298F009BDB11 /* UIProgressView+AFNetworking.m in Sources */,
+				2F747D131A87314B009BDB11 /* LKLoginViewController.m in Sources */,
 				2F747CFE1A87298F009BDB11 /* AFHTTPSessionManager.m in Sources */,
 				2F747D051A87298F009BDB11 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2F747CFD1A87298F009BDB11 /* AFHTTPRequestOperationManager.m in Sources */,
 				2F747D091A87298F009BDB11 /* UIImageView+AFNetworking.m in Sources */,
+				2F747D201A873345009BDB11 /* LKProjectListViewController.m in Sources */,
 				2F747D081A87298F009BDB11 /* UIButton+AFNetworking.m in Sources */,
 				2F747D0B1A87298F009BDB11 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2F747D0C1A87298F009BDB11 /* UIWebView+AFNetworking.m in Sources */,
