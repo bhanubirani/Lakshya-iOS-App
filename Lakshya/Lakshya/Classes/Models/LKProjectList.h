@@ -10,4 +10,9 @@
 
 @interface LKProjectList : NSObject
 
+@property (nonatomic, strong) NSMutableArray *projectList;
+@property (nonatomic, assign) int totalProjects;
+
+- (id)initWithDict:(NSDictionary *)projectList;
+
 @end

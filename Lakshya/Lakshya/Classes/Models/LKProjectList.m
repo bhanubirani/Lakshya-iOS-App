@@ -11,4 +11,17 @@
 
 @implementation LKProjectList
 
+- (id)initWithDict:(NSDictionary *)projectList {
+    self = [super init];
+    if (self) {
+        self.projectList = [[NSMutableArray alloc] init];
+        self.totalProjects = [[projectList objectForKey:@"total_projects"] intValue];
+        for (NSDictionary *projectData in [projectList objectForKey:@"projects"]) {
+            LKProject *project = [[LKProject alloc] initWithDict:projectData];
+            [self.projectList addObject:project];
+        }
+    }
+    return self;
+}
+
 @end
