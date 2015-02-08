@@ -22,7 +22,7 @@ static LKProjectListManger *taskListManger;
     return taskListManger;
 }
 
-- (void)downloadProjectWithStartIndex:(int)startindex numberofProjects:(int)numberofProjects {
+- (void)downloadProjectWithStartIndex:(int)startindex numberofProjects:(int)numberofProjects handler:(ProjectListHandler)handler {
     
     /**
      API :http://crowdfund.thelakshyafoundation.org/_project/list?start_index=0&num_projects=5
@@ -36,8 +36,9 @@ static LKProjectListManger *taskListManger;
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"http://crowdfund.thelakshyafoundation.org/_project/list" parameters:queryParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.projectList = [[LKProjectList alloc] initWithDict:responseObject];
+        handler(self.projectList, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
+        handler(nil, error);
     }];
 }
 
