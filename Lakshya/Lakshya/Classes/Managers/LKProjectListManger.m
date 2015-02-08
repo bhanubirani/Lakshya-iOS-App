@@ -35,7 +35,7 @@ static LKProjectListManger *taskListManger;
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"http://crowdfund.thelakshyafoundation.org/_project/list" parameters:queryParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+        self.projectList = [[LKProjectList alloc] initWithDict:responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

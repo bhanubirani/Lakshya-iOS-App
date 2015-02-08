@@ -27,7 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"Sparkfund";
     
     self.projectListArray = [NSMutableArray array];
     [self.projectListArray addObject:@"Project 1"];
@@ -45,7 +46,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)leftBarButtonAction:(id)sender {
@@ -53,21 +53,19 @@
     [(APP_DELEGATE).rootVC didRecieveOpenLeftPanelCallback];
 }
 
-//----------------------------------------------------------------------------------
 #pragma mark - UICollectionViewDataSource Methods
-//----------------------------------------------------------------------------------
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
-     numberOfItemsInSection:(NSInteger)section{
+     numberOfItemsInSection:(NSInteger)section {
     return [self.projectListArray count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
-                  cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 
     LKProjectListCVCell* projectListCVCell = nil;
     
@@ -83,8 +81,7 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
-  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGSize collectionViewCellSize = CGSizeMake(288, 240);
     return collectionViewCellSize;
 }
@@ -92,7 +89,7 @@
 #pragma mark - UICollectionViewDelegate Methods
 
 - (void)collectionView:(UICollectionView *)collectionView
-didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Selected:%@",indexPath);
 }
 

@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LKProjectList.h"
 
 @interface LKProjectListManger : NSObject
+
+@property (nonatomic, strong) LKProjectList *projectList;
 
 + (instancetype)sharedInstance;
 - (void)downloadProjectWithStartIndex:(int)startindex numberofProjects:(int)numberofProjects;
