@@ -27,6 +27,12 @@
 		2F747D131A87314B009BDB11 /* LKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D121A87314B009BDB11 /* LKLoginViewController.m */; };
 		2F747D1D1A87331A009BDB11 /* LKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D1C1A87331A009BDB11 /* LKRootViewController.m */; };
 		2F747D201A873345009BDB11 /* LKProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D1F1A873345009BDB11 /* LKProjectListViewController.m */; };
+		2F747D2B1A873832009BDB11 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D231A873832009BDB11 /* MMDrawerBarButtonItem.m */; };
+		2F747D2C1A873832009BDB11 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D261A873832009BDB11 /* MMDrawerController.m */; };
+		2F747D2D1A873832009BDB11 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D281A873832009BDB11 /* MMDrawerVisualState.m */; };
+		2F747D2E1A873832009BDB11 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D2A1A873832009BDB11 /* UIViewController+MMDrawerController.m */; };
+		2F747D321A8738AE009BDB11 /* LKLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D311A8738AE009BDB11 /* LKLeftMenuViewController.m */; };
+		2F747D361A873957009BDB11 /* LKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F747D351A873957009BDB11 /* LKUtils.m */; };
 		2FD7DB041A8727C70040A778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB031A8727C70040A778 /* main.m */; };
 		2FD7DB071A8727C70040A778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7DB061A8727C70040A778 /* AppDelegate.m */; };
 		2FD7DB0D1A8727C70040A778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7DB0B1A8727C70040A778 /* Main.storyboard */; };
@@ -88,6 +94,19 @@
 		2F747D1C1A87331A009BDB11 /* LKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKRootViewController.m; sourceTree = "<group>"; };
 		2F747D1E1A873345009BDB11 /* LKProjectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProjectListViewController.h; sourceTree = "<group>"; };
 		2F747D1F1A873345009BDB11 /* LKProjectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProjectListViewController.m; sourceTree = "<group>"; };
+		2F747D221A873832009BDB11 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		2F747D231A873832009BDB11 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		2F747D241A873832009BDB11 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		2F747D251A873832009BDB11 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		2F747D261A873832009BDB11 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		2F747D271A873832009BDB11 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		2F747D281A873832009BDB11 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		2F747D291A873832009BDB11 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		2F747D2A1A873832009BDB11 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		2F747D301A8738AE009BDB11 /* LKLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLeftMenuViewController.h; sourceTree = "<group>"; };
+		2F747D311A8738AE009BDB11 /* LKLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLeftMenuViewController.m; sourceTree = "<group>"; };
+		2F747D341A873957009BDB11 /* LKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUtils.h; sourceTree = "<group>"; };
+		2F747D351A873957009BDB11 /* LKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUtils.m; sourceTree = "<group>"; };
 		2FD7DAFE1A8727C70040A778 /* Lakshya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lakshya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD7DB021A8727C70040A778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD7DB031A8727C70040A778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +153,7 @@
 		2F747CD11A87298F009BDB11 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				2F747D211A873832009BDB11 /* MMDrawerController */,
 				2F747CD21A87298F009BDB11 /* AFNetworking-master */,
 			);
 			path = Externals;
@@ -215,6 +235,8 @@
 		2F747CFB1A87298F009BDB11 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2F747D331A873947009BDB11 /* Utils */,
+				2F747D2F1A873898009BDB11 /* Left */,
 				2F747D141A8731B9009BDB11 /* Root */,
 				2F747D0F1A87312C009BDB11 /* Landing */,
 				2F747D101A87312C009BDB11 /* Login */,
@@ -256,6 +278,40 @@
 				2F747D1C1A87331A009BDB11 /* LKRootViewController.m */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		2F747D211A873832009BDB11 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				2F747D221A873832009BDB11 /* MMDrawerBarButtonItem.h */,
+				2F747D231A873832009BDB11 /* MMDrawerBarButtonItem.m */,
+				2F747D241A873832009BDB11 /* MMDrawerController+Subclass.h */,
+				2F747D251A873832009BDB11 /* MMDrawerController.h */,
+				2F747D261A873832009BDB11 /* MMDrawerController.m */,
+				2F747D271A873832009BDB11 /* MMDrawerVisualState.h */,
+				2F747D281A873832009BDB11 /* MMDrawerVisualState.m */,
+				2F747D291A873832009BDB11 /* UIViewController+MMDrawerController.h */,
+				2F747D2A1A873832009BDB11 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		2F747D2F1A873898009BDB11 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				2F747D301A8738AE009BDB11 /* LKLeftMenuViewController.h */,
+				2F747D311A8738AE009BDB11 /* LKLeftMenuViewController.m */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		2F747D331A873947009BDB11 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F747D341A873957009BDB11 /* LKUtils.h */,
+				2F747D351A873957009BDB11 /* LKUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		2FD7DAF51A8727C70040A778 = {
@@ -415,15 +471,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F747D2B1A873832009BDB11 /* MMDrawerBarButtonItem.m in Sources */,
+				2F747D321A8738AE009BDB11 /* LKLeftMenuViewController.m in Sources */,
 				2F747D021A87298F009BDB11 /* AFURLRequestSerialization.m in Sources */,
 				2F747D011A87298F009BDB11 /* AFURLConnectionOperation.m in Sources */,
 				2F747D071A87298F009BDB11 /* UIAlertView+AFNetworking.m in Sources */,
 				2F747D001A87298F009BDB11 /* AFSecurityPolicy.m in Sources */,
 				2F747CFC1A87298F009BDB11 /* AFHTTPRequestOperation.m in Sources */,
 				2F747D1D1A87331A009BDB11 /* LKRootViewController.m in Sources */,
+				2F747D361A873957009BDB11 /* LKUtils.m in Sources */,
 				2F747D041A87298F009BDB11 /* AFURLSessionManager.m in Sources */,
 				2F747D031A87298F009BDB11 /* AFURLResponseSerialization.m in Sources */,
+				2F747D2E1A873832009BDB11 /* UIViewController+MMDrawerController.m in Sources */,
 				2FD7DB071A8727C70040A778 /* AppDelegate.m in Sources */,
+				2F747D2C1A873832009BDB11 /* MMDrawerController.m in Sources */,
 				2F747D0A1A87298F009BDB11 /* UIProgressView+AFNetworking.m in Sources */,
 				2F747D131A87314B009BDB11 /* LKLoginViewController.m in Sources */,
 				2F747CFE1A87298F009BDB11 /* AFHTTPSessionManager.m in Sources */,
@@ -433,6 +494,7 @@
 				2F747D201A873345009BDB11 /* LKProjectListViewController.m in Sources */,
 				2F747D081A87298F009BDB11 /* UIButton+AFNetworking.m in Sources */,
 				2F747D0B1A87298F009BDB11 /* UIRefreshControl+AFNetworking.m in Sources */,
+				2F747D2D1A873832009BDB11 /* MMDrawerVisualState.m in Sources */,
 				2F747D0C1A87298F009BDB11 /* UIWebView+AFNetworking.m in Sources */,
 				2F747CFF1A87298F009BDB11 /* AFNetworkReachabilityManager.m in Sources */,
 				2FD7DB041A8727C70040A778 /* main.m in Sources */,

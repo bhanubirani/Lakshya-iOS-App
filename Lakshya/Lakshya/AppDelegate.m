@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LKUtils.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [LKUtils customoizeNavigationBarApperance];
+    
     return YES;
 }
 

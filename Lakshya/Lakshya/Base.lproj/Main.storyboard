@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hbW-4a-Rk8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="78E-FR-KEo">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -27,7 +27,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Tkx-99-6He">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbW-4a-Rk8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LKLoginViewNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="hbW-4a-Rk8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9mC-Jm-7ok">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -71,9 +71,16 @@
                     <view key="view" contentMode="scaleToFill" id="jz8-JA-seA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.81960784310000001" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1kD-Wr-IcY"/>
+                    <navigationItem key="navigationItem" id="1kD-Wr-IcY">
+                        <barButtonItem key="leftBarButtonItem" image="leftmenu_btn" id="BeW-y6-NiC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="leftBarButtonAction:" destination="etR-dA-Gf8" id="Cec-yq-2xS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93N-3c-4e6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +104,28 @@
             </objects>
             <point key="canvasLocation" x="650" y="979"/>
         </scene>
+        <!--Left Menu View Controller-->
+        <scene sceneID="3Ly-aP-HXJ">
+            <objects>
+                <viewController storyboardIdentifier="LKLeftMenuViewController" id="B30-Pv-G6h" customClass="LKLeftMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gWp-f2-vAI"/>
+                        <viewControllerLayoutGuide type="bottom" id="e01-X1-IDQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dho-bj-J5J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.56862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jy6-QO-Yde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="-364"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="leftmenu_btn" width="20" height="20"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
